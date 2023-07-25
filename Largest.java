@@ -4,11 +4,11 @@ class Largest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter first number");
-        int num1 = sc.nextInt();
+        double num1 = sc.nextDouble();
         System.out.println("Enter second number");
-        int num2 = sc.nextInt();
+        double num2 = sc.nextDouble();
         System.out.println("Enter third number");
-        int num3 = sc.nextInt();
+        double num3 = sc.nextDouble();
 
         if (num1 >= num2 && num1 >= num3) {
             System.out.println(num1 + " is the largest number.");
@@ -17,6 +17,9 @@ class Largest {
         } else {
             System.out.println(num3 + " is the largest number.");
         }
+
+        double avg = (num1 + num2 + num3)/3;
+        System.out.println("The average of the numbers is "+ avg);
         sc.close();
     }
     
